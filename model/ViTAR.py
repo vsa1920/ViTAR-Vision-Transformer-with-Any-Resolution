@@ -1,8 +1,8 @@
 import torch
 from torch import nn
 from torch.nn import functional as F
-from FuzzyPositionalEncoding import FuzzyPositionalEncoding
-from AdaptiveTokenMerger import AdaptiveTokenMerger
+from model.FuzzyPositionalEncoding import FuzzyPositionalEncoding
+from model.AdaptiveTokenMerger import AdaptiveTokenMerger
 
 class PatchEmbed(nn.Module):
     def __init__(self,patch_size=16,in_chans=3,embed_dim=768):

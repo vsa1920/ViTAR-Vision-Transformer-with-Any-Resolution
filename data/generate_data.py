@@ -6,9 +6,6 @@ from tqdm import tqdm
 
 import os
 
-mean = [0.485, 0.456, 0.406]
-std = [0.229, 0.224, 0.225]
-
 data_dir = "/scratch2/vaibhav/data/imagenette2-320"
 try:
     train_data = Imagenette(root=data_dir, split='train', download=True)

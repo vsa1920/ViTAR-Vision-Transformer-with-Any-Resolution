@@ -29,5 +29,4 @@ class ReloadedBinnedDataset(Dataset):
 
         if self.transforms is not None:
             image = self.transforms(image)
-
         return image, label
